@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@700 & display=swap');
+
+*{
+    margin: 0;
+
+}
+
+p{
+    font-weight: 400;
+}
+
+h1 h2 h3{
+    font-weight: 700;
+}
+
+header{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0px 0px
+
+}
+
+
+header img{
+    width: 216px;
+    padding: 15px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header nav a{
+    color: black;
+    transition: 0,2;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: orange;
+    transition: 0,2;
+}
+
+main{
+    padding: 100px 15px;
+}
+
+#div1{
+    max-width: 1170px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 100px 0px;
+    gap: 60px;
+}
+
+#section1{
+    max-width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 65% auto;
+    gap: 60px;
+    align-items: center;
+
+}
+
+#articlemain1{
+    max-width: 1170px;
+    margin: auto;
+}
+
+#articlemain1 h1{
+    font-size: 25px;
+}
+
+#section1 p{
+    padding: 25px 0px;
+}
+
+#section1 img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover
+}
+
+
+#section1 a{
+    text-decoration: none;
+    color: black;
+    transition: 0,2;
+    color: orange;
+    border: 3px solid orange;
+    border-radius: 30px;
+    padding: 5px 30px;
+}
+
+#section1 a:hover{
+    color: black;
+    transition: 0,2;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: black;
+}
+
+#section2{
+    max-width: 1440px;
+    margin: auto;
+}
+#section2 h2{
+    text-align: center;
+    padding: 100px 0px 40px 0px;
+}
+
+#section2 div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+
+#section2 img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover
+}
+
+#section2 article{
+    padding: 40px 0px;
+}
+
+#section2 h3{
+    text-align: start;
+    color: orange;
+    transition: 0,2;
+    padding: 10px 0px;
+}
+
+#section2 a{
+    text-align: center;
+    color: orange;
+    transition: 0,2;
+    text-decoration: none;
+    border: 3px solid orange;
+    border-radius: 30px;
+    padding: 5px 30px;
+}
+
+#section2 p{
+    padding-bottom: 25px;
+    text-align: start;
+}
+
+#section2 a:hover{
+    color: white;
+    border: 3px solid black;
+    background-color: black;
+}
+
+footer{
+    background-color: orange;
+    margin: auto;
+
+}
+
+#footersection1{
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 15px;
+    color: white;
+}
+
+#footersection2{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+}
+
+#footersection2 h2{
+    padding-bottom: 15px;
+}
+
+#footersection2 p{
+    padding-bottom: 15px;
+}
+
+#footersection2 article{
+    padding:15px;
+}
+
+#footersection2 ul{
+    list-style: none;
+    padding-left: 0px;
+
+}
+#footersection2 ul a{
+    text-decoration: none;
+    color:white;
+    transition: 0,2;
+}
+
+#footersection2 ul a:hover{
+    color: black;
+    transition: 0,2;
+}
+
+#footersection2 img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover
+}
+
+#copyright{
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#copyright p{
+    color: white;
+    transition: 0,2;
+}
+#copyright a{
+    color: white;
+    transition: 0,2;
+}
+
+#copyright a:hover{
+    color: red;
+    transition: 0,2;
+}
+    
+@media screen and (max-width: 1024px){
+
+header nav{
+    display: none;
+}
+
+#leburger{
+    align-items: center;
+}
+
+#section1 img{
+    grid-row: 2;
+}
+
+#section1 {
+    grid-template-columns: 1fr;
+}
+
+#section2 div{
+    grid-template-columns: repeat(2,1fr);
+}
+
+#section2 div article:nth-child(1),
+#section2 div article:nth-child(4){
+    grid-column: 1/3;
+}
+#footersection2{
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+@media screen and (max-width: 767px){
+
+#div1{
+    grid-template-columns: none;
+}
+
+#section2 div{
+    display: block;
+}
+
+#footersection2{
+    display: block;
+}
+
+
+
+
+
+}
+
+

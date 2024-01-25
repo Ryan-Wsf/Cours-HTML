@@ -1,0 +1,226 @@
+*{
+    margin:0;
+}
+
+
+/* Header */
+header{
+    /* max width sert a indiquer une taille maximale pour notre container */
+    max-width: 1440px;
+    /* Le margin auto permet de redistribuer automatiquement la marge, dans ce contexte, elle permet de centrer le contenu dans le navigateur */
+    margin: auto;
+    /* Le display flex rend les element flexibles et permet de redimentionner nos blocs a leur taille maximale */
+    display: flex;
+    /* Le justify content permet de redistribuer l'espace restant, ici space between met de l'epace entre les éléments*/
+    justify-content: space-between;
+    /* la propriété align items center aligne nos elements dans le container en les centrant en hauteur */
+    align-items: center;
+    /* Le padding permet d'ajouter de la marge interne dans notre header afin que le contenu ne soit pas collé de bord en bord lorsque le navigateur fait une taille inférieur au max width */
+    padding: 0 15px;
+}
+
+nav ul{
+    /* Ici on retire le style de la liste, attention list style s'utilise que sur des ul et ol */
+    list-style: none;
+    /* Display flex, meme utilisation qu'au dessus */
+    display: flex;
+    /* Le gap ajouter de l'espace entre les éléments */
+    gap: 40px;
+    /* Les liste ont un padding left de base, ici on le retire afin que l'élément soit collé au bord du header */
+    padding-left: 0;
+}
+
+nav a{
+    /* On retire le style du lien classique (underline) avec la propriété text decoration */
+    text-decoration: none;
+    /* On modifie la couleur du texte avec la propriété color, chaque fois qu'on veut agir sur une couleur de texte la propriété sera toujours "color" */
+    color:black;
+    /* On ajoute un transition pour adoucir l'effet au survol */
+    transition:all 0.2s;
+}
+
+nav a:hover{
+    /* Le :hover permet de dire ce qu'on souhaite faire au survol. Ici on change la couleur et on remet la transition afin qu'elle soit présente à l'entré et à la sortie du survol */
+    color:orange;
+    transition:all 0.2s;
+}
+
+header img{
+    /* On redimentionne le logo, sans toucher a la hauteur afin de conserver le ratio de l'image. Le margin permet d'éviter que le logo soit collé en haut du header */
+    width:200px;
+    margin:20px 0;
+} 
+
+/* Footer */
+footer{
+    background-color: #000;
+}
+
+footer > div{
+    max-width: 1140px;
+    margin:auto;
+    /* avec mon display grid, j'indique que le container est une grille */
+    display: grid;
+    /* Le grid template column sert a indiquer le nombre de colonnes qu'on souhaite */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(3,1fr); */
+    gap:40px;
+    /* J'ai mis color blanc ici pour que la majorité de mes éléments texuels passent en blanc */
+    color:#fff;
+}
+
+footer img{
+    /* Le width 100% sur l'image permet de redimentionner l'image à la largeur complète de son container */
+    width:100%;
+}
+
+footer article{
+    padding: 20px 0px;
+
+}
+
+footer h2{
+    /* text transform uppercase permet de passer le texte en majuscule */
+    text-transform: uppercase;
+    /* Pour indiquer la taille du texte j'utilise la propriété font-size */
+    font-size: 25px;
+    /* La margin bottom permet de décoller mon titre du contenu d'en dessous */
+    margin-bottom: 20px;
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul a{
+    text-decoration: none;
+    color:#fff;
+    transition: all 0.2s;
+}
+
+footer ul a:hover{
+    color:red;
+    transition: all 0.2s;
+}
+
+footer > p {
+    background:#c1c1c1;
+    color:#000;
+    text-align: center;
+    padding:20px;
+}
+
+footer > p a{
+    color:#000;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+footer > p a:hover{
+    opacity:0.7;
+    transition: 0.2s;
+} 
+
+/* Main - Section 1 */
+
+#section1{
+   max-width: 960px;
+   /* Le margin 40px auto permet d'avoir une marge top et bottom à 40px et de centré également le contenu dans le navigateur en redistribuant automatiquement les marges à gauche et à droite */
+   margin: 40px auto;
+   display: flex;
+   justify-content: space-around;
+   gap: 60px;
+   align-items: center;
+}
+
+#section1 img{
+    width: 400px;
+}
+
+#section1 h1{
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color:orange;
+}
+
+#section1 p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+#section1 a{
+    text-decoration: none;
+    /* pour la bordure on indique la largeur, le style de la bordure et la couleur */
+    border: 1px solid orange;
+    /* le border radius permet d'arrondir le bords de nos bordure */
+    border-radius: 30px;
+    /* Le padding permet de mettre de l'espace entre le contenu textuel et la bordure qui l'entour */
+    padding:10px 40px;
+    color: orange;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+#section1 a:hover{
+    color:#fff;
+    border-color: #000;
+    background-color: #000;
+    transition: all 0.2s;
+} 
+
+/* Main - Section 2 */
+
+#section2{
+    max-width: 1440px;
+    margin: 80px auto;
+}
+
+#section2 h2{
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color:orange;
+}
+
+#section2 > p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#section2 > div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:40px;
+}
+
+#section2 article h3{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-decoration: uppercase;
+
+}
+#section2 article p{
+    font-size: 18px;
+    margin-bottom:20px ;
+}
+
+#section2 a{
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding:10px 40px;
+    color: #000;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+#section2 a:hover{
+    color:#000;
+    border-color: orange;
+    background-color: orange;
+    transition: all 0.2s;
+}
